@@ -613,6 +613,8 @@ footer{
     .Activités{width: 350px; height: 200px;}
     #container4 img {width: 350px; height: 150px;}
 
+    #container3 img{width: 130px;}
+
     footer{height: 501px; flex-direction: column; padding: 0; align-items: normal;}
     footer h1{padding-bottom: 15px;}
      
