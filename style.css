@@ -1,0 +1,629 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* EN TETE ET LOGO*/
+
+header{
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+
+}
+header img{
+    width: 61.09px;
+    height: 19px;
+    
+}
+
+body{
+    padding: 25px;
+    margin: 0;
+    
+}
+
+h1{
+    
+    font-size: 22px;
+    font-style: normal;
+    margin: 0;
+    padding:5px;
+    padding-left: 30px;
+    
+
+}
+
+p{
+    
+    font-style: normal;
+    text-align: justify;
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 30px;
+    
+}
+
+li{
+    display: inline;
+    margin: 30px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+
+}
+header a:hover{
+    color: blue;
+    border-top: 3px solid #0065FC;
+    padding-top: 38px;
+    width: 162px ;
+    height: 2px;
+}
+
+/* FORMULAIRE */
+
+form{
+    padding: 30px;
+    padding-left: 30px;
+    display: flex;
+    
+}
+    
+input{
+    
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    width: 332px;
+    height: 49px;
+}
+
+button{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    border: solid;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 300px;
+    padding-left: 16px  ;
+    
+}
+
+.fa-magnifying-glass{
+    visibility: hidden;
+}
+
+::placeholder{
+    
+    font-style: bold;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+/* LES FONT AWESOME */
+
+.fa-location-dot{
+    position: absolute;
+    color: black;
+    border: 1px solid #F2F2F2;  
+    border-radius: 15px 0 0 15px;
+    background: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    padding: 10px;
+}
+
+.fa-location-dot::before{
+
+    position: absolute;
+    padding-left: 8px;
+    padding-top: 3px;
+    font-size: 1.2em;
+
+}
+
+.fa-money-bill-wave{
+    color: #0065FC;
+    padding: 7px;
+}
+.fa-person{
+    color: #0065FC;
+    padding: 7px;
+}
+.fa-heart{
+    color: #0065FC;
+    padding: 7px;
+}
+.fa-dog{
+    color: #0065FC;
+    padding: 7px;
+}
+
+/* LA BARRE DE NAVIGATION */
+
+
+.navbar{
+
+    display: flex;
+    padding: 10px;
+    width: 80%;
+    height: 150px;
+    padding-left: 20px;
+    
+
+}
+
+
+.navbar li{
+    border: 2px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    padding: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3px;
+    padding-left: 20px;
+}
+
+.navbar ul{
+    
+    display: flex;
+    padding-left: 0;
+    
+}
+
+.navbar li:hover{
+    background: #DEEBFF;
+}
+
+.navbar h2{
+    padding-top: 35px;
+    margin: 0;
+    padding-left: 10px;
+    
+    
+}
+
+.navbar nav{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* LE CERCLE DU FONT AWESOME ET LE TEXTE P */
+
+.circle{
+    
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    margin: 11px;
+    
+}
+
+.circle-and-p{
+
+    display: flex;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-bottom: 15px;
+   
+    
+
+}
+
+.circle-and-p p{
+    padding-top: 20px;
+    padding-left: 0;
+    
+}
+
+.fa-info{
+
+    
+    color: #0065fc;
+    margin-left: 12px;
+    margin-top: 5px;
+    
+}
+
+img{
+    height: 124px;
+    width: 246px;
+    left: 0px;
+    top: 0px;
+}
+
+/* LE CONTAINER PRINCIPALE */
+
+#container1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+    
+}
+
+/* LE CONTAINER DE GAUCHE */
+
+#container2{
+
+    width: 60%;
+    height: 100%;
+    padding: 1.2em;
+    border-radius: 20px;
+    background: #F2F2F2;    
+    
+}
+
+.conteneur1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.Hébergements{
+    
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em;
+    height: 210px;
+    width: 246px;
+    border: 0px black solid;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.2);
+    
+    
+}
+
+#container2 h2{
+
+    padding-left: 44px;
+    padding-bottom: 46px;
+}
+
+#container2 img{
+     
+    width: 246px;
+    height: 124px;
+    padding-right: 10px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+
+}
+
+
+.Hébergements span{
+
+    display: flex;
+    align-items: flex-start;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    width: 204px;
+    height: 12px;
+    color: black;
+    
+    
+}
+
+.Hébergements h1{
+   font-size: 16px;
+   padding-left: 16px;
+   padding-bottom: 9px;
+   color: black;
+
+}
+
+.Hébergements a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.étoile{
+
+    
+    display: inline;
+    color:#0065fc ;
+    padding-left: 16px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    
+}
+
+.fa-star{
+
+width: 12px;
+height: 12px;
+}
+
+.cinquieme-étoile{
+    
+    display: inline;
+    color: #F2F2F2;
+    
+}
+
+#container3{
+    width: 33%;
+    height: 100%;
+    display:inline-block;
+    border-radius: 20px;
+    background: #F2F2F2;
+    
+    
+}
+
+.Populaire{
+
+    width: 70%;
+    display: flex;
+    margin: 35px;
+    padding: 0;
+    border: 0px black solid;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.2);
+    background: #FFFFFF;
+
+}
+
+.conteneur2{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+}
+
+.fa-chart-line{
+    color: #0065FC;
+    margin-top: 10px;
+}
+
+/* LE CONTAINER DE DROITE */
+
+#container3 img{
+    
+    display: flex;
+    width: 137px;
+    height: 144px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
+    
+    
+}
+
+
+#container3 span{
+    margin: 20px;
+}
+
+#container3 .nom{
+    font-weight: bold;
+    display: block;
+}
+.Populaire2{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Populaire2 h1{
+    
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 16px;
+    padding-right: 30px;
+    color: black;
+}
+
+.Populaire2 p{
+    
+    width: 169px;
+    padding-left: 15px;
+    color: black;
+
+    
+}
+
+.Populaire2 a{
+
+text-decoration: none;
+}
+
+.étoile2{
+    display: inline;
+    color:#0065fc ;
+    padding-left: 15px;
+    margin-bottom: 12px;
+}
+
+.cinquieme-étoile2{
+    
+    display: inline;
+    color: #F2F2F2;
+    padding-left: 4px;
+}
+
+/* CONTENEUR ACTIVITES A MARSEILLE */
+
+#container4{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    width: 100%;
+    
+}
+
+.Activités{
+    display: flex;
+    width: 296px;
+    height: 500px;
+    margin: 10px;
+    border: 0px black solid;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.2);  
+      
+}
+
+.Activités a{
+    text-decoration: none;
+}
+
+.Activités img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 445px;
+}
+
+.Activités h1{
+    width: 247px;
+    font-size: 16px;
+    padding-left: 19px;
+    padding-top: 20px;
+    color: black;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 225px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-bottom: 58px;
+    padding-right: 327px;
+    
+}
+
+.conteneur-footer{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETTE */
+
+@media screen and (max-width: 800px){
+
+    
+    header {width: 100%; padding-right: 0;}
+
+    #container1 {width: 100%; display: flex; flex-direction: column; }
+    #container2 {width: 100%; height: 100%; margin-bottom: 40px;}
+    #container3 {width: 100%; height: 300px;}
+
+    .navbar{font-size: 0.8em;}
+    .navbar li {margin: 15px;}
+    .navbar h2{padding-top: 50px;}
+
+
+    .Populaire{width: 295px; padding: 0; margin: 10px; }  
+    .Populaire-tablette{display: flex; justify-content: flex-start; width: 100%; align-items: center;}
+    .Populaire-tablette p{font-size: 11px; width: 100%;}
+    .Populaire-tablette h1{font-size: 14px;}
+    .étoile2{margin: 0;}
+
+    .conteneur2{margin: 0; padding-top: 10px; padding-left: 20px; padding-right: 30px; padding-bottom: 20px;}
+    #container3 img{width: 87px;}
+    
+
+    #container4{ width: 100%; justify-content: space-between;}
+    .Activités{width: 150px; height: 300px;}
+    #container4 img{width: 150px; height: 230px}
+    .Activités h1{font-size: 11px; justify-content: center; width: 100%;}
+    
+
+
+
+    footer{padding: 0; align-items: center;}
+
+}
+
+/* PORTABLE */
+
+@media screen and (max-width: 500px){
+
+    body{padding: 0;}
+
+    #container1 {width: 100%; flex-direction: column-reverse; }
+    #container2 {width: 100%; background: none;}
+    #container3 {width: 100%; height: 700px; border-radius: 0%;}
+    #container4 {width: 100%; flex-direction: column; align-items: center;}
+
+    .Populaire-tablette{display: flex; flex-direction: column; align-items: center; height: auto; }
+
+    header{ width: 100%; flex-direction: column; align-items: center; padding: 20px; justify-content: space-between;}
+    header nav{width: 100%; flex-wrap: wrap;}
+    header ul{padding: 0; display: flex; justify-content: flex-start; width: 100%;}
+    header a:hover{color: blue; border-bottom: 2px solid #0065FC; padding-top: 46px; border-top: 0px;}
+    header a{ width: 100%; border-bottom: 2px solid #F2F2F2; width: 100%; padding-right: 15px; padding-left: 15px; padding-bottom: 15px;}
+    header img{margin-top: 15px;}
+    
+    button{width: 55px; margin-left: 280px;}
+    button span{ display: none;}
+    input{width: 300px;}
+    .fa-magnifying-glass{visibility: visible; color: white;}
+
+    .navbar{width: 100%; height: auto; display: flex; flex-wrap: wrap;  margin: 0;}
+    .navbar ul{ flex-wrap: wrap;   }
+    .navbar li{width: 47%; margin: 5px; }
+
+
+    .conteneur1{width: 100%;}
+    .conteneur1 img{ width: 200px;}
+
+    .Hébergements {width: 100%;}
+    #container2 img{width: 23em; padding: 0;}
+
+    .Activités{width: 350px; height: 200px;}
+    #container4 img {width: 350px; height: 150px;}
+
+    footer{height: 501px; flex-direction: column; padding: 0; align-items: normal;}
+    footer h1{padding-bottom: 15px;}
+     
+       
+        
+        
+    
+   
+
+
+}
+
+
+
