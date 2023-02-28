@@ -309,6 +309,8 @@ img{
     padding-bottom: 46px;
 }
 
+  
+
 #container2 img{
      
     width: 246px;
@@ -316,7 +318,7 @@ img{
     padding-right: 10px;
     border-radius: 20px 20px 0 0;
     padding: 5px;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 
@@ -416,6 +418,7 @@ height: 12px;
     height: 144px;
     border-radius: 15px 0 0 15px;
     margin: 5px;
+    object-fit: cover;
     
     
 }
@@ -503,6 +506,7 @@ text-decoration: none;
     width: 100%;
     border-radius: 20px 20px 0 0;
     height: 445px;
+    object-fit: cover;
 }
 
 .Activités h1{
@@ -538,24 +542,41 @@ footer{
 
 /* MEDIA QUERIES */
 
+/* LAPTOP */
+@media all and (min-width: 992px) and (max-width: 1400px){
+
+    #container2{width: 50%;}
+    .conteneur1{flex-wrap: wrap;}
+    #container3{width: 40%;}
+    
+    
+    
+    .Populaire{width: 83%;}
+    .Populaire2{width: 100%;}
+
+    .Activités{width: 195px;}
+    #container4 img{width: 195px;}
+    .Activités h1{font-size: 13px;}
+
+}
 
 
 /* TABLETTE */
 
-@media screen and (min-width: 768px){
+@media all and (min-width: 768px) and (max-width: 992px){
 
     
-    header {width: 100%; padding-right: 0; background-color: #0065FC;}
+    header {width: 100%; padding-right: 0;}
 
     #container1 {width: 100%; display: flex; flex-direction: column; }
-    #container2 {width: 30%; height: 100%; margin-bottom: 40px;}
+    #container2 {width: 100%; height: 100%; margin-bottom: 40px;}
     #container3 {width: 100%; height: 300px;}
 
     .navbar{font-size: 0.8em;}
     .navbar li {margin: 15px;}
     .navbar h2{padding-top: 50px;}
- 
-    .conteneur1{width: 100%;}
+
+    .Hébergements{margin: 10px ;}
 
 
     .Populaire{width: 295px; padding: 0; margin: 10px; }  
@@ -582,50 +603,86 @@ footer{
 
 /* PORTABLE */
 
-@media screen and (max-width: 768px){
+@media all and (max-width: 767px){
 
     body{padding: 0;}
 
     #container1 {width: 100%; flex-direction: column-reverse; }
     #container2 {width: 100%; background: none;}
-    #container3 {width: 100%; height: 700px; border-radius: 0%;}
+    #container3 {width: 100%; height: auto; border-radius: 0%;}
     #container4 {width: 100%; flex-direction: column; align-items: center;}
 
     .Populaire-tablette{display: flex; flex-direction: column; align-items: center; height: auto; }
 
-    header{ width: 100%; flex-direction: column; align-items: center; padding: 20px; justify-content: space-between;}
-    header nav{width: 100%; flex-wrap: wrap;}
+    header{ width: 100%; flex-direction: column; align-items: center; padding: 0;}
+    header nav{width: 100%; flex-wrap: wrap; padding-bottom: 30px; padding-right: 20px;padding-top: 20px;}
     header ul{padding: 0; display: flex; justify-content: flex-start; width: 100%;}
     header a:hover{color: blue; border-bottom: 2px solid #0065FC; padding-top: 46px; border-top: 0px;}
-    header a{ width: 100%; border-bottom: 2px solid #F2F2F2; width: 100%; padding-right: 15px; padding-left: 15px; padding-bottom: 15px;}
+    header a{ width: 100%; border-bottom: 2px solid #F2F2F2; width: 100%; padding: 30px;
+              font-size: 20px;  
+    }
+    header li {margin: 2px;}
     header img{margin-top: 15px;}
+
+    .nav-portable{padding-right: 35px; padding-left: 50px;}
+    .nav-portable2{padding-left: 60px; padding-right: 70px;}
     
     button{width: 55px; margin-left: 280px;}
     button span{ display: none;}
     input{width: 300px;}
     .fa-magnifying-glass{visibility: visible; color: white;}
 
-    .navbar{width: 100%; height: auto; display: flex; flex-wrap: wrap;  margin: 0;}
-    .navbar ul{ flex-wrap: wrap;   }
-    .navbar li{width: 47%; margin: 5px; }
+    .navbar{width: 100%; height: auto; display: flex; flex-wrap: wrap;  margin: 0; padding: 0;}
+    .navbar ul{width: 100%; flex-wrap: wrap;   }
+    .navbar li{width: 47%; margin: 5px; padding: 10px;}
+    .navbar h2{padding-top: 0;}
+
+    .fa-person::before{font-size: 25px;}
+    .fa-dog::before{font-size: 25px;}
+    .fa-heart::before{font-size: 25px;}
+    .fa-money-bill-wave::before{font-size: 25px;}
+
+    .circle-and-p{padding-left: 0; padding-right: 15px;}
+    .fa-info::before{padding-right: 15px;}
 
 
     .conteneur1{width: 100%;}
     .conteneur1 img{ width: 200px;}
 
-    .Hébergements {width: 100%;}
+    .Hébergements {width: 100%; height: auto;}
     #container2 img{width: 23em; padding: 0;}
 
     .Activités{width: 350px; height: 200px;}
     #container4 img {width: 350px; height: 150px;}
-
-    #container3 img{width: 130px;}
 
     footer{height: 501px; flex-direction: column; padding: 0; align-items: normal;}
     footer h1{padding-bottom: 15px;}
      
        
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
