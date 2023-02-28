@@ -376,7 +376,7 @@ height: 12px;
 
 #container3{
     width: 33%;
-    height: 100%;
+    height: 676px;
     display:inline-block;
     border-radius: 20px;
     background: #F2F2F2;
@@ -388,7 +388,7 @@ height: 12px;
 
     width: 70%;
     display: flex;
-    margin: 35px;
+    margin: 20px;
     padding: 0;
     border: 0px black solid;
     border-radius: 20px;
@@ -398,10 +398,23 @@ height: 12px;
 
 }
 
+.Populaire-tablette{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .conteneur2{
     display: flex;
-    justify-content: space-between;
-    margin: 35px;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.conteneur2 h1{
+    padding: 0;
 }
 
 .fa-chart-line{
