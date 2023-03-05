@@ -26,8 +26,9 @@ header img{
 }
 
 body{
+    
     padding: 25px;
-    margin: 0;
+    margin: 0 auto;
     
 }
 
@@ -258,7 +259,7 @@ img{
 
 /* LE CONTAINER PRINCIPALE */
 
-#container1{
+.container1{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -271,11 +272,12 @@ img{
 
 #container2{
 
-    width: 60%;
-    height: 100%;
+    width: 63%;
+    height: 700px;
     padding: 1.2em;
     border-radius: 20px;
-    background: #F2F2F2;    
+    background: #F2F2F2;   
+    padding: 0; 
     
 }
 
@@ -283,7 +285,6 @@ img{
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 100%;
 }
 
@@ -306,7 +307,7 @@ img{
 #container2 h2{
 
     padding-left: 44px;
-    padding-bottom: 46px;
+    
 }
 
   
@@ -336,10 +337,11 @@ img{
     
 }
 
-.Hébergements h1{
+.Hébergements h3{
    font-size: 16px;
    padding-left: 16px;
    padding-bottom: 9px;
+   margin: 0;
    color: black;
 
 }
@@ -374,9 +376,9 @@ height: 12px;
     
 }
 
-#container3{
-    width: 33%;
-    height: 676px;
+.container3{
+    width: 30%;
+    height: 700px;
     display:inline-block;
     border-radius: 20px;
     background: #F2F2F2;
@@ -386,7 +388,7 @@ height: 12px;
 
 .Populaire{
 
-    width: 70%;
+    width: 80%;
     display: flex;
     margin: 20px;
     padding: 0;
@@ -398,12 +400,6 @@ height: 12px;
 
 }
 
-.Populaire-tablette{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .conteneur2{
     display: flex;
     justify-content: space-around;
@@ -413,8 +409,18 @@ height: 12px;
     margin-bottom: 10px;
 }
 
-.conteneur2 h1{
+.conteneur2 h2{
     padding: 0;
+    margin: 0;
+    
+}
+
+.conteneur3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 .fa-chart-line{
@@ -424,7 +430,7 @@ height: 12px;
 
 /* LE CONTAINER DE DROITE */
 
-#container3 img{
+.container3 img{
     
     display: flex;
     width: 137px;
@@ -437,11 +443,11 @@ height: 12px;
 }
 
 
-#container3 span{
+.container3 span{
     margin: 20px;
 }
 
-#container3 .nom{
+.container3 .nom{
     font-weight: bold;
     display: block;
 }
@@ -449,21 +455,23 @@ height: 12px;
 
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 
 }
 
-.Populaire2 h1{
+.Populaire2 h3{
     
     font-size: 16px;
     padding-left: 15px;
-    padding-top: 16px;
+    padding-top: 15px;
     padding-right: 30px;
+    margin: 0;
     color: black;
 }
 
 .Populaire2 p{
     
-    width: 169px;
+    width: 100%;
     padding-left: 15px;
     color: black;
 
@@ -476,6 +484,7 @@ text-decoration: none;
 }
 
 .étoile2{
+    
     display: inline;
     color:#0065fc ;
     padding-left: 15px;
@@ -522,12 +531,13 @@ text-decoration: none;
     object-fit: cover;
 }
 
-.Activités h1{
-    width: 247px;
+.Activités h3{
+  
     font-size: 16px;
     padding-left: 19px;
     padding-top: 20px;
     color: black;
+    margin: 0;
 }
 
 /* FOOTER */
@@ -556,21 +566,10 @@ footer{
 /* MEDIA QUERIES */
 
 /* LAPTOP */
-@media all and (min-width: 992px) and (max-width: 1400px){
+@media all and (min-width: 992px){
 
-    #container2{width: 50%;}
-    .conteneur1{flex-wrap: wrap;}
-    #container3{width: 40%;}
+    body{width: 1400px; margin: 0 auto;}
     
-    
-    
-    .Populaire{width: 83%;}
-    .Populaire2{width: 100%;}
-
-    .Activités{width: 195px;}
-    #container4 img{width: 195px;}
-    .Activités h1{font-size: 13px;}
-
 }
 
 
@@ -581,31 +580,40 @@ footer{
     
     header {width: 100%; padding-right: 0;}
 
-    #container1 {width: 100%; display: flex; flex-direction: column; }
+    .container1 {width: 100%; display: flex; flex-direction: column; }
     #container2 {width: 100%; height: 100%; margin-bottom: 40px;}
-    #container3 {width: 100%; height: 300px;}
+    .container3 {width: 100%; height: 290px; padding: 5px;}
 
     .navbar{font-size: 0.8em;}
-    .navbar li {margin: 15px;}
+    .navbar li {margin: 10px; padding: 15px;}
     .navbar h2{padding-top: 50px;}
+    .navbar ul{margin: 30px;}
 
-    .Hébergements{margin: 10px ;}
+    .fa-person::before{font-size: 25px;}
+    .fa-dog::before{font-size: 25px;}
+    .fa-heart::before{font-size: 25px;}
+    .fa-money-bill-wave::before{font-size: 25px;}
 
 
-    .Populaire{width: 295px; padding: 0; margin: 10px; }  
-    .Populaire-tablette{display: flex; justify-content: flex-start; width: 100%; align-items: center;}
-    .Populaire-tablette p{font-size: 11px; width: 100%;}
-    .Populaire-tablette h1{font-size: 14px;}
+    .Hébergements{width: 30%; margin: 10px ;}
+    #container2 img{width: 105%;}
+
+
+    .Populaire{width: 400px; padding: 0; margin: 10px; }  
+    .conteneur3{flex-direction: row; width: 100%;}
+    .conteneur3 p{font-size: 11px; width: 100%;}
+    .conteneur3 h3{font-size: 14px; padding: 10px 10px 0 10px;}
     .étoile2{margin: 0;}
 
-    .conteneur2{margin: 0; padding-top: 10px; padding-left: 20px; padding-right: 30px; padding-bottom: 20px;}
-    #container3 img{width: 87px;}
+    .conteneur2{margin: 0; padding-top: 10px; padding-left: 20px; padding-right: 30px; padding-bottom: 20px; justify-content: space-between;}
+    .container3 img{width: 87px; margin-right: 0;}
+
     
 
     #container4{ width: 100%; justify-content: space-between;}
-    .Activités{width: 150px; height: 300px;}
+    .Activités{width: 150px; height: 290px;}
     #container4 img{width: 150px; height: 230px}
-    .Activités h1{font-size: 11px; justify-content: center; width: 100%;}
+    .Activités h3{font-size: 16px; justify-content: center; width: 100%; padding: 10px 0 0 10px;}
     
 
 
@@ -620,12 +628,12 @@ footer{
 
     body{padding: 0;}
 
-    #container1 {width: 100%; flex-direction: column-reverse; }
-    #container2 {width: 100%; background: none;}
-    #container3 {width: 100%; height: auto; border-radius: 0%;}
+    .container1 {width: 100%; flex-direction: column-reverse; }
+    #container2 {width: 100%; background: none; height: auto;}
+    .container3 {width: 100%; height: auto; border-radius: 0%;}
     #container4 {width: 100%; flex-direction: column; align-items: center;}
 
-    .Populaire-tablette{display: flex; flex-direction: column; align-items: center; height: auto; }
+    .conteneur3{display: flex; flex-direction: column; align-items: center; height: auto; }
 
     header{ width: 100%; flex-direction: column; align-items: center; padding: 0;}
     header nav{width: 100%; flex-wrap: wrap; padding-bottom: 30px; padding-right: 20px;padding-top: 20px;}
@@ -647,7 +655,7 @@ footer{
 
     .navbar{width: 100%; height: auto; display: flex; flex-wrap: wrap;  margin: 0; padding: 0;}
     .navbar ul{width: 100%; flex-wrap: wrap;   }
-    .navbar li{width: 47%; margin: 5px; padding: 10px;}
+    .navbar li{width: 47%; margin: 5px; padding: 5px;}
     .navbar h2{padding-top: 0;}
 
     .fa-person::before{font-size: 25px;}
@@ -662,8 +670,8 @@ footer{
     .conteneur1{width: 100%;}
     .conteneur1 img{ width: 200px;}
 
-    .Hébergements {width: 100%; height: auto;}
-    #container2 img{width: 23em; padding: 0;}
+    .Hébergements {width: 100%; height: 210px;}
+    #container2 img{width: 400px; padding: 0;}
 
     .Activités{width: 350px; height: 200px;}
     #container4 img {width: 350px; height: 150px;}
