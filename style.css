@@ -656,7 +656,7 @@ footer{
 
     .navbar{width: 100%; height: auto; display: flex; flex-wrap: wrap;  margin: 0; padding: 0;}
     .navbar ul{width: 100%; flex-wrap: wrap; }
-    .navbar li{width: 47%; margin: 5px; padding: 5px;}
+    .navbar li{width: 47%; margin: 2px; padding: 0;}
     .navbar h2{padding-top: 0;}
 
     form{padding-left: 10px;}
